@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Payton & Tony
 
 You can use the [editor on GitHub](https://github.com/Tschmitt99/datavizgroup16/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
