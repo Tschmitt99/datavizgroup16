@@ -8,7 +8,7 @@ It's very easy to make some words **bold** and other words *italic* with Markdow
 
 Link to the dataset assignment I uploaded as a test to see if file downloads work from the repo
 
-[link to my upload](https://github.com/Tschmitt99/datavizgroup16/blob/gh-pages/Tony%20Schmitt%20Milestone%201%20dataset.docx?raw=true)
+[link](https://github.com/Tschmitt99/datavizgroup16/blob/gh-pages/Tony%20Schmitt%20Milestone%201%20dataset.docx?raw=true)
 
 ### Markdown
 
