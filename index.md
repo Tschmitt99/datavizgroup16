@@ -22,6 +22,8 @@ Syntax highlighted code block
 ## Header 2
 ### Header 3
 
+```
+
 ```javascript
 function fancyAlert(arg) {
   if(arg) {
