@@ -6,8 +6,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 
-# Link to the dataset assignment I uploaded as a test to see if file downloads work from the repo
-https://github.com/Tschmitt99/datavizgroup16/blob/gh-pages/Tony%20Schmitt%20Milestone%201%20dataset.docx?raw=true
+Link to the dataset assignment I uploaded as a test to see if file downloads work from the repo
+
+[link to my upload](https://github.com/Tschmitt99/datavizgroup16/blob/gh-pages/Tony%20Schmitt%20Milestone%201%20dataset.docx?raw=true)
 
 ### Markdown
 
