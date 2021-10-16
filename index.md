@@ -2,13 +2,10 @@
 
 You can use the [editor on GitHub](https://github.com/Tschmitt99/datavizgroup16/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
-
 Link to the dataset assignment I uploaded as a test to see if file downloads work from the repo
+[link to my upload](https://github.com/Tschmitt99/datavizgroup16/blob/gh-pages/Tony%20Schmitt%20Milestone%201%20dataset.docx?raw=true)
 
-[link](https://github.com/Tschmitt99/datavizgroup16/blob/gh-pages/Tony%20Schmitt%20Milestone%201%20dataset.docx?raw=true)
+
 
 ### Markdown
 
