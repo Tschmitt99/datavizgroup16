@@ -61,7 +61,7 @@ function update(name){
 	d3.selectAll('path').remove();
 
 
-	d3.csv("/vis3_testdata.csv", function(data) {
+	d3.csv("vis3_testdata.csv", function(data) {
 		document.getElementById("p_name").innerHTML = name
 		document.getElementById("p_index").innerHTML = data[6][name]
 		document.getElementById("p_hp").innerHTML = data[0][name]
