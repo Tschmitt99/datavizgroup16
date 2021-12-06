@@ -1,28 +1,175 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Pokemon Data Analyis</title>
-		<!-- <link rel="stylesheet" href="style.css"> -->
-	</head>
-	<body> 
-         <h2>Pokemon Data Analysis</h2> 
-		 <p><b>Click on the link below to download our proposal:</b><p>
-		 <a href="/Project Proposal.docx" download="Project Proposal Group16.docx">DOWNLOAD</a>
-		 <h1>Select a page to see a visualization!</h1>
-		 <p>Text</p>
-         <nav> 
-			 <!-- <form action="browse.php" action="GET"> 
-				 <input name="search" placeholder="Search"/> 
-			 </form> -->
-			 <ul> 
-				 <li><a href="vis1.html"><strong>Individual Pokemon Stat Bar Chart</strong></a></li> 
-				 <li><a href="vis2.html">Effectiveness Type Chart</a></li> 
-				 <li><a href="vis3.html"><strong>Strengths & Weaknesses Radar Chart</strong></a></li>
-                 <li><a href="vis4.html"><strong>Strongest/Weakest Overall Type Box-and-Whisker Plot</strong></a></li> 
-                 <li><a href="vis5.html">Average Overall Types by Generation</a></li> 
-                 <li><a href="vis6.html">Type Representation Treemap</a></li> 
-			 </ul> 
-		 </nav> 
-     </body>
-</html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style> /* set the CSS */
+
+	div.tooltip {	
+		position: absolute;			
+		text-align: center;			
+		width: 200px;					
+		height: 60px;					
+		padding: 2px;				
+		font-family: "Courier New", monospace;		
+		background: cornflowerblue;	
+		fill-opacity: 1.0;
+      	fill: green;
+		border: 0px;		
+		border-radius: 8px;			
+		pointer-events: none;
+		font-size: 11px;			
+	}
+
+	div.imageframe{
+		position: absolute;
+		text-align: center;
+		width: 32px;
+		height: 14px;
+	}
+
+	.column {
+  		float: left;
+  		width: 50%;
+	}
+	.tablecolumn {
+  		float: left;
+  		width: 20%;
+	}
+
+	.row:after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	
+</style>
+
+<body style="background-color:powderblue;">
+    <h2>Pokemon Data Analysis</h2> 
+<button id="fname" name="fname" value="Total_Stat_Sum" onclick=update2(fname.value)>Total Stat Sum</button>
+	<button id="fname2" name="fname" value="HP" onclick=update2(fname2.value)>HP</button>
+	<button id="fname3" name="fname" value="Attack" onclick=update2(fname3.value)>Attack</button>
+	<button id="fname4" name="fname" value="Defense" onclick=update2(fname4.value)>Defense</button>
+	<button id="fname5" name="fname" value="Special Attack" onclick=update2(fname5.value)>Special Attack</button>
+	<button id="fname6" name="fname" value="Special Defense" onclick=update2(fname6.value)>Special Defense</button>
+	<button id="fname7" name="fname" value="Speed" onclick=update2(fname7.value)>Speed</button>
+	<br/>
+</body>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+
+<script src="script_vis4.js"></script>
+
+<link rel="shortcut icon" href="#">
+
+	
+<div class="row">
+	<div class="column">
+		
+		<table style="width:1200">
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+					<img id="sprite0" alt="" height = 45 width=60>
+				</td>
+				<td>
+					<img id="sprite1" alt="" height = 45 width=60>
+				</td>
+				<td>
+					<img id="sprite2" alt="" height = 45 width=60>
+				</td>
+				
+			</tr>
+			<tr style="width:200">
+				<td>Name</td>
+				<td>
+					<label id="p0_name">Bulbasaur</label>
+				</td>
+				<td>
+					<label id="p1_name"> </label>
+				</td>
+				<td>
+					<label id="p2_name"> </label>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>Index</td>
+				<div class="Tablecolumn">
+					<td><label id="p0_index">0</label></td>
+				</div>
+				<div class="Tablecolumn">
+					<td><label id="p1_index">0</label></td>
+				</div>
+				<div class="Tablecolumn">
+					<td><label id="p2_index">0</label></td>
+				</div>
+			</tr>
+			<tr>
+				<td>Primary Type</td>
+				<td><img id="p0_type" alt="" width = 32 height = 14></td>
+				<td><img id="p1_type" alt="" width = 32 height = 14></td>
+				<td><img id="p2_type" alt="" width = 32 height = 14></td>
+			</tr>
+			<tr>
+				<td>Secondary Type</td>
+				<td><img id="p0_type2" alt=""width = 32 height = 14></td>
+				<td><img id="p1_type2" alt=""width = 32 height = 14></td>
+				<td><img id="p2_type2" alt=""width = 32 height = 14></td>
+			</tr>
+			<tr>
+				<td>HP</td>
+				<td><label id="p0_hp">0</label></td>
+				<td><label id="p1_hp">0</label></td>
+				<td><label id="p2_hp">0</label></td>
+			</tr>
+			<tr>
+				<td>Attack</td>
+				<td><label id="p0_a">0</label></td>
+				<td><label id="p1_a">0</label></td>
+				<td><label id="p2_a">0</label></td>
+			</tr>
+			<tr>
+				<td>Defence</td>
+				<td><label id="p0_d">0</label></td>
+				<td><label id="p1_d">0</label></td>
+				<td><label id="p2_d">0</label></td>
+			</tr>
+			<tr>
+				<td>Special Attack</td>
+				<td><label id="p0_sa">0</label></td>
+				<td><label id="p1_sa">0</label></td>
+				<td><label id="p2_sa">0</label></td>
+			</tr>
+			<tr>
+				<td>Special Defence</td>
+				<td><label id="p0_sd">0</label></td>
+				<td><label id="p1_sd">0</label></td>
+				<td><label id="p2_sd">0</label></td>
+			</tr>
+			<tr>
+				<td>Speed</td>
+				<td><label id="p0_s">0</label></td>
+				<td><label id="p1_s">0</label></td>
+				<td><label id="p2_s">0</label></td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td><label id="p0_tot">0</label></td>
+				<td><label id="p1_tot">0</label></td>
+				<td><label id="p2_tot">0</label></td>
+			</tr>
+		  </table>
+	</div>
+	<div class="column">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<t_svg width="200" height="200" id="svg1"></t_svg>
+	</div>
+  </div>
