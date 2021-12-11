@@ -204,10 +204,10 @@ update2("Attack")
 let features = ["HP","Attack","Defence","Special Attack","Special Defence","Speed"];
 var pokemon_count = -1;
 
-let image_src = ['/PNG/BugIC.png', '/PNG/DarkIC.png', '/PNG/DragonIC.png', '/PNG/ElectricIC.png', '/PNG/FairyIC.png'
-, '/PNG/FightingIC.png', '/PNG/FireIC.png', '/PNG/FlyingIC.png', '/PNG/GhostIC.png', '/PNG/GrassIC.png'
-, '/PNG/GroundIC.png', '/PNG/IceIC.png', '/PNG/NormalIC.png', '/PNG/PoisonIC.png', '/PNG/PsychicIC.png'
-, '/PNG/RockIC.png', '/PNG/SteelIC.png', '/PNG/WaterIC.png'];
+let image_src = ['PNG/BugIC.png', 'PNG/DarkIC.png', 'PNG/DragonIC.png', 'PNG/ElectricIC.png', 'PNG/FairyIC.png'
+, 'PNG/FightingIC.png', 'PNG/FireIC.png', 'PNG/FlyingIC.png', 'PNG/GhostIC.png', 'PNG/GrassIC.png'
+, 'PNG/GroundIC.png', 'PNG/IceIC.png', 'PNG/NormalIC.png', 'PNG/PoisonIC.png', 'PNG/PsychicIC.png'
+, 'PNG/RockIC.png', 'PNG/SteelIC.png', 'PNG/WaterIC.png'];
 
 let radius = 250;
 let t_svg = d3.select("body").append("svg")
@@ -289,7 +289,7 @@ const base_y = 50
 const y_incr = 25
 
 var bug1 = t_svg.append('image')
-	.attr('xlink:href', '/PNG/BugIC.png')
+	.attr('xlink:href', 'PNG/BugIC.png')
 	.attr('width', 34)
 	.attr('height', 14)
 	.attr('x', base_x)
@@ -321,7 +321,7 @@ var bug1 = t_svg.append('image')
 
 
 var dark1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/DarkIC.png')
+.attr('xlink:href', 'PNG/DarkIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', 700)
@@ -352,7 +352,7 @@ var dark1 = t_svg.append('image')
 });
 
 var drag1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/DragonIC.png')
+.attr('xlink:href', 'PNG/DragonIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', 700)
@@ -383,7 +383,7 @@ div2.transition()
 });
 
 var elec1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/ElectricIC.png')
+.attr('xlink:href', 'PNG/ElectricIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', 700)
@@ -414,7 +414,7 @@ div2.transition()
 });
 
 var fairy1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/FairyIC.png')
+.attr('xlink:href', 'PNG/FairyIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -445,7 +445,7 @@ div2.transition()
 });
 
 var fight1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/FightingIC.png')
+.attr('xlink:href', 'PNG/FightingIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -476,7 +476,7 @@ div2.transition()
 });
 
 var fire1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/FireIC.png')
+.attr('xlink:href', 'PNG/FireIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -507,7 +507,7 @@ div2.transition()
 });
 
 var fly1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/FlyingIC.png')
+.attr('xlink:href', 'PNG/FlyingIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -538,7 +538,7 @@ div2.transition()
 });
 
 var ghost1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/GhostIC.png')
+.attr('xlink:href', 'PNG/GhostIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -569,7 +569,7 @@ div2.transition()
 });
 
 var grass1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/GrassIC.png')
+.attr('xlink:href', 'PNG/GrassIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -600,7 +600,7 @@ div2.transition()
 });
 
 var ground1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/GroundIC.png')
+.attr('xlink:href', 'PNG/GroundIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -631,7 +631,7 @@ div2.transition()
 });
 
 var ice1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/IceIC.png')
+.attr('xlink:href', 'PNG/IceIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -662,7 +662,7 @@ div2.transition()
 });
 
 var norm1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/NormalIC.png')
+.attr('xlink:href', 'PNG/NormalIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -693,7 +693,7 @@ div2.transition()
 });
 
 var pois1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/PoisonIC.png')
+.attr('xlink:href', 'PNG/PoisonIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -725,7 +725,7 @@ div2.transition()
 
 
 var psych1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/PsychicIC.png')
+.attr('xlink:href', 'PNG/PsychicIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -756,7 +756,7 @@ div2.transition()
 });
 
 var rock1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/RockIC.png')
+.attr('xlink:href', 'PNG/RockIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -787,7 +787,7 @@ div2.transition()
 });
 
 var steel1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/SteelIC.png')
+.attr('xlink:href', 'PNG/SteelIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -818,7 +818,7 @@ div2.transition()
 });
 
 var water1 = t_svg.append('image')
-.attr('xlink:href', '/PNG/WaterIC.png')
+.attr('xlink:href', 'PNG/WaterIC.png')
 .attr('width', 34)
 .attr('height', 14)
 .attr('x', base_x)
@@ -953,7 +953,7 @@ for(k = 0; k < types.length; k++){
 	]
 
 	IF[k] = t_svg.append('image')
-	.attr('xlink:href', '/PNG/WaterIC.png')
+	.attr('xlink:href', 'PNG/WaterIC.png')
 	.attr('width', 34)
 	.attr('height', 14)
 	.attr('x', base_x + 15 + 210)
@@ -974,9 +974,9 @@ function update(name){
 	
 
 
-	d3.csv("/pokemon.csv", function(data) {
+	d3.csv("pokemon.csv", function(data) {
 		document.getElementById("p" + pokemon_count + "_name").innerHTML = name
-		document.getElementById("sprite" + pokemon_count).src = "/sprites/" + data[6][name] + ".png";
+		document.getElementById("sprite" + pokemon_count).src = "sprites/" + data[6][name] + ".png";
 		document.getElementById("p" + pokemon_count + "_index").innerHTML = data[6][name]
 		
 		document.getElementById("p" + pokemon_count + "_type").src = image_src[types_id[data[7][name]]];
@@ -1079,7 +1079,7 @@ function update(name){
 		def_eff = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
 		pref_type = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
-		d3.csv("/chart.csv", function(eff_data) {
+		d3.csv("chart.csv", function(eff_data) {
 
 			
 			
@@ -1133,10 +1133,10 @@ function clear(){
 
 
 		document.getElementById("p" + p + "_name").innerHTML = ""
-		document.getElementById("sprite" + p).src = "/sprites/blank.png";
+		document.getElementById("sprite" + p).src = "sprites/blank.png";
 		document.getElementById("p" + p + "_index").innerHTML = "0"
-		document.getElementById("p" + p + "_type").src = "/sprites/blank.png"
-		document.getElementById("p" + p + "_type2").src = "/sprites/blank.png"
+		document.getElementById("p" + p + "_type").src = "sprites/blank.png"
+		document.getElementById("p" + p + "_type2").src = "sprites/blank.png"
 		document.getElementById("p" + p + "_hp").innerHTML = "0"
 		document.getElementById("p" + p + "_a").innerHTML = "0"
 		document.getElementById("p" + p + "_d").innerHTML = "0"
